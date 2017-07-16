@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
-import { AppRegistry, View } from 'react-native'
-import Blink from './src/components/blink-text'
+import { AppRegistry, StyleSheet, Text, View } from 'react-native'
+import { styles } from './src/stylesheet/style'
 
 export default class App extends Component {
 
   render() {
     return (
       <View style={{ alignItems: 'center' }}>
-        <Blink text='Victor is amazing!' />
-        <Blink text='This guy is lit!' />
-        <Blink text="I'm now on twitter!" />
+        <Text style={ styles.red }>Just Red</Text>
+        <Text style={ styles.bigblue }>Just BigBlue</Text>
+        <Text style={ [styles.bigblue, styles.red] }>BigBlue then Red</Text>
+        <Text style={ [styles.red, styles.bigblue] }>Red then BigBlue</Text>
       </View>
     )
   }
