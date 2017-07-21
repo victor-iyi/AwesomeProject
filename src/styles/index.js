@@ -4,7 +4,7 @@ const themeBlue = '#006699';
 
 export const styles = StyleSheet.create({
   wrapper: {
-    marginTop: 30,
+    paddingTop: 23,
     flex: 1,
   },
   container: {

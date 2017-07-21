@@ -7,6 +7,7 @@ class TextArea extends Component {
     return (
      <TextInput
             {...this.props} // inherits any props passed to it e.g multiline, numberOfLines
+            underlineColorAndroid="transparent"
             style={styles.textarea}
             maxLength={40}
             editable={true}

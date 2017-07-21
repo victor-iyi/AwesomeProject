@@ -44,6 +44,7 @@ export default class Home extends Component {
         <TextArea 
             numberOfLines={4}
             placeholder="Enter something here."
+            placeholderTextColor="#006699"
             onChangeText={(text) => this.setState({text})}
         />
 
