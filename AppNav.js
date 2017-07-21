@@ -1,8 +1,6 @@
 import { StackNavigator } from 'react-navigation';
-const Screens = require('./src/screens');
-
-console.log(Screens);
+const { Home } = require('./src/screens');
 
 export default StackNavigator({
-  Home: { screen: Screens.Home },
-})
+  Home: { screen: Home },
+});

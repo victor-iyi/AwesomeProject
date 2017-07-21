@@ -1,5 +1,5 @@
 import Home from './home';
 
 module.exports = {
-  Home: Home
-}
+  Home: Home,
+};
