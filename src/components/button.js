@@ -7,8 +7,7 @@ class Button extends Component {
     return (
       <TouchableNativeFeedback
         background={Platform.OS === 'android' ? TouchableNativeFeedback.SelectableBackground() : ''}
-        onPress={this.props.onPress}
-      >
+        onPress={this.props.onPress}>
         <View style={styles.button}>
           <Text style={styles.buttonText}>{this.props.title}</Text>
         </View>
@@ -28,4 +27,5 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+
 export default Button;
